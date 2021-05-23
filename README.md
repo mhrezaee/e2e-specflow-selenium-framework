@@ -9,7 +9,7 @@ I have re-write the Calculator Steps defenitions with this approach
 
 3- find an appropriate element id or unique css selector for identifier of the page
 
-4- there is also components like headers, footers, modals, which are not a complete page. you take advantage of componentbase class to create them.
+4- there is also components like headers, footers, modals, which are not a complete page, take advantage of componentbase class to create them.
 
 5- follow the classes in Manipulators which covers many variety of interations with web elements.
 
