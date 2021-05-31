@@ -17,4 +17,4 @@ I have re-write the Calculator Steps defenitions with this approach
 Be carefull to check the chrome driver on the project and the version of chrome installed on your machine.
   if they are not the same make them the same version by updating Selenium.Driver.ChromeDriver nuget package.
 
-PS> Special thanks to [Reza Janmohammadi](https://github.com/janmohammadi)
+PS: Special thanks to [Reza Janmohammadi](https://github.com/janmohammadi)
