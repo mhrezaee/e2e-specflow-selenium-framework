@@ -1,5 +1,6 @@
 ﻿using System.Threading;
 using OpenQA.Selenium;
+using OpenQA.Selenium.Support.UI;
 
 namespace CalculatorSelenium.Specs.Pages
 {
@@ -22,9 +23,10 @@ namespace CalculatorSelenium.Specs.Pages
             Enter(number, "#second-number");
         }
 
-        public int ReadResult()
+        public int ReadResult(string expectedResult)
         {
-            Thread.Sleep(3000);
+            //Thread.Sleep(3000);
+            WaitToSeeText("#result", expectedResult);
             var result = Attr<int>("value", "#result");
             return result;
         }

@@ -46,7 +46,7 @@ namespace CalculatorSelenium.Specs.Steps
         [Then("the result should be (.*)")]
         public void ThenTheResultShouldBe(int expectedResult)
         {
-            var actualResult = _pageFactory.CalculatorPage.ReadResult();
+            var actualResult = _pageFactory.CalculatorPage.ReadResult(expectedResult.ToString());
 
             actualResult.Should().Be(expectedResult);
         }

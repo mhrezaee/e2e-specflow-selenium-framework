@@ -94,6 +94,11 @@ namespace CalculatorSelenium.Specs.Manipulators
                 Thread.Sleep(3000);
             WaitToSee(page.Identifier);
         }
+
+        protected void WaitToSeeText(string cssSelector, string value)
+        {
+            LongWait.Until(ExpectedConditions.TextToBePresentInElementValue(By.CssSelector(cssSelector),value));
+        }
         
     }
 }
