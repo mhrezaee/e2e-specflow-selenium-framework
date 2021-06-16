@@ -25,7 +25,6 @@ namespace CalculatorSelenium.Specs.Pages
 
         public int ReadResult(string expectedResult)
         {
-            //Thread.Sleep(3000);
             WaitToSeeText("#result", expectedResult);
             var result = Attr<int>("value", "#result");
             return result;
